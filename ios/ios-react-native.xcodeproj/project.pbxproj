@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E4F04218AE130AFA18A391E /* Pods_ios_react_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85906F1ECAA204DB77C13F72 /* Pods_ios_react_native.framework */; };
+		8331B46E2170FDCE0031DE91 /* RNMapManagerZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8331B46D2170FDCE0031DE91 /* RNMapManagerZ.m */; };
 		835E3818216FF72400351372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3817216FF72400351372 /* AppDelegate.swift */; };
 		835E381A216FF72400351372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3819216FF72400351372 /* ViewController.swift */; };
 		835E381D216FF72400351372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835E381B216FF72400351372 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8331B46D2170FDCE0031DE91 /* RNMapManagerZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNMapManagerZ.m; sourceTree = "<group>"; };
 		835E3814216FF72400351372 /* ios-react-native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-react-native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		835E3817216FF72400351372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		835E3819216FF72400351372 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				835E381E216FF72600351372 /* Assets.xcassets */,
 				835E3820216FF72600351372 /* LaunchScreen.storyboard */,
 				835E3823216FF72600351372 /* Info.plist */,
+				8331B46D2170FDCE0031DE91 /* RNMapManagerZ.m */,
 			);
 			path = "ios-react-native";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8331B46E2170FDCE0031DE91 /* RNMapManagerZ.m in Sources */,
 				835E381A216FF72400351372 /* ViewController.swift in Sources */,
 				835E3818216FF72400351372 /* AppDelegate.swift in Sources */,
 			);
