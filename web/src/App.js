@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
-import Logger from '../../shared/logger';
 import { createStore } from 'redux';
+import './App.css';
+import FriendList from './components/FriendList';
 
 const initialState = {
   invitedGuests: [],
@@ -81,13 +81,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Logger>
-          <FriendList
-            title="Invited Friends"
-            friends={this.state.invitedGuests}
-            actions={this.rsvpActions(store.dispatch)}
-          />
-        </Logger>
+        <FriendList
+          title="Invited Friends"
+          friends={this.state.invitedGuests}
+          actions={this.rsvpActions(store.dispatch)}
+        />
         <hr />
         <FriendList
           title="Friends"
@@ -98,36 +96,5 @@ class App extends Component {
     );
   }
 }
-
-const FriendList = ({ title, friends, onClick, actions }) => (
-  <section>
-    <h1>{title}</h1>
-    {friends.map((friend, idx) => {
-      if (actions) {
-        return <Invite key={idx} {...friend} actions={actions(friend.name)} />;
-      } else {
-        return <Friend key={idx} {...friend} onClick={onClick} />;
-      }
-    })}
-  </section>
-);
-
-const Invite = ({ name, response, actions }) => (
-  <React.Fragment>
-    <Friend name={name} response={response} />
-    {response !== null && (
-      <div className="actions">
-        <button onClick={actions.onConfirm}>Yes</button>
-        <button onClick={actions.onMaybe}>Maybe</button>
-        <button onClick={actions.onDecline}>Decline</button>
-      </div>
-    )}
-  </React.Fragment>
-);
-const Friend = ({ name, response, onClick }) => (
-  <p className={`friend ${response}`} onClick={onClick ? onClick(name) : null}>
-    {name}
-  </p>
-);
 
 export default App;

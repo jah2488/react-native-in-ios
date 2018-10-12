@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppRegistry, StyleSheet, Text, ScrollView, View } from 'react-native';
+import Logger from './shared/logger';
 
 const Header = ({ text }) => {
   const style = {
@@ -13,9 +14,11 @@ const Header = ({ text }) => {
     },
   };
   return (
-    <View style={style.container}>
-      <Text style={style.text}>{text}</Text>
-    </View>
+    <Logger name="React Native Header">
+      <View style={style.container}>
+        <Text style={style.text}>{text}</Text>
+      </View>
+    </Logger>
   );
 };
 
