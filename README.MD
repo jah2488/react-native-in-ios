@@ -54,6 +54,7 @@ This is all that is _required_ on the JS side to have a working React Native com
 - [Official Guide](https://facebook.github.io/react-native/docs/integration-with-existing-apps)
 - [First Setup Tutorial](https://apptillery.info/development/basic-setup-add-react-native-existing-ios-project/)
 - [Hybrid App Examples](https://github.com/dsibiski/react-native-hybrid-app-examples)
+- [Tips and Tricks Integrating RN and Native Apps](https://hashrocket.com/blog/posts/tips-and-tricks-from-integrating-react-native-with-existing-native-apps)
 
 ## Using Custom Components in React Native
 Regardless of the size of your React Native application, at a certain point you're going to need to use a component in your React Native code that isn't currently available in the built-in libraries.
