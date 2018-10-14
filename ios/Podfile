@@ -1,5 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+# Fixes various issues with getting react-native setup
 plugin 'cocoapods-fix-react-native'
 
 # Required for Swift apps
